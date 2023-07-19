@@ -1,0 +1,25 @@
+.page-footer {
+    background: #f0f0f0;
+    color:rgb(65, 60, 60);
+    
+}
+
+button{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(111, 109, 243, 0.8);
+    display: inline-block;
+    padding: 2px;
+    width: 100px;
+    /* text-shadow: 2px 2px 4px rgba(20, 20, 26, 0.8); */
+    box-shadow: 0 0 5px rgba(9, 38, 167, 0.514);
+  }
+
+  button:hover {
+    border-color: rgb(112, 175, 247);
+    box-shadow: 0 0 5px rgba(9, 38, 167, 0.514);
+    background-color: rgb(55, 97, 212);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    /* text-shadow: 2px 2px 4px rgba(111, 109, 243, 0.8); */
+  }

@@ -1,0 +1,56 @@
+/* Header.css */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #302929b4;
+  color: white;
+  border: 1px solid rgb(210, 189, 149);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(245, 240, 240, 0.8);
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
+
+.navbar .nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+  color: orange;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus {
+  color: orange;
+}
+
+.navbar .nav-link.social-link {
+  display: inline-block;
+}
+
+.navbar .nav-link.resume {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*navbar toggle button and navbar collapse content */
+.navbar-toggler-icon {
+  background-color: orange /* Change this to the color you want */
+}
+
+ button {
+  border-radius: 10%;
+  background-color: rgb(33, 104, 211);
+  color: white;
+}
+
+button:hover {
+  border-radius: 20%;
+  color: black;
+}
