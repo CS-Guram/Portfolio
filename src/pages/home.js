@@ -8,7 +8,7 @@ import javascript from '../components/images/javascript.png';
 import postgresql from '../components/images/postgresql.png'; 
 import linux from '../components/images/linux.png'; 
 
-// import world from '../components/images/word-image-1.jpeg'; 
+import world from '../components/images/word-image-1.jpeg'; 
 import Dental from '../components/images/TO Dental.jpg'; 
 import Robot from '../components/images/Robo.jpg'; 
 import PetStore from '../components/images/Pet Paradise.jpg'; 
@@ -128,7 +128,7 @@ function Home () {
           <img src={Robot} alt="" />
           <div className="portfolio-layer">
             <h4 className="m-2">Robo Game</h4>
-            <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
+            <p>2D Robo shooter created with the Unity engine, and it includes various features like a physics engine, collision detection, and animation.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary" 
                  onClick={() => window.open("https://github.com/CS-Guram/Robo-Game", '_blank', 'noopener noreferrer')}>Repo</button>
@@ -140,9 +140,10 @@ function Home () {
         </div>
         </div>
 
+        {/* Add more portfolio boxes as needed 4*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={Dental} alt="To Dental Web" />
+          <img src={world} alt="To Dental Web" />
           <div className="portfolio-layer">
             <h4 className="m-2">T | O Dental</h4>
             <p>The web app dental service is built using React.JS, Bootstrap,
@@ -160,10 +161,10 @@ function Home () {
             </div>
             </div>
       
-        {/* Add more portfolio boxes as needed 2*/}
+        {/* Add more portfolio boxes as needed 5*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={PetStore} alt="" />
+          <img src={world} alt="" />
           <div className="portfolio-layer">
             <h4 className="m-2">Pet Paradise</h4>
             <p>The web app for a pet store is built using HTML, PHP, SQL, and the Apache
@@ -177,10 +178,10 @@ function Home () {
         </div>
         </div>
 
-        {/* Add more portfolio boxes as needed 3*/}
+        {/* Add more portfolio boxes as needed 6*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={Robot} alt="" />
+          <img src={world} alt="" />
           <div className="portfolio-layer">
             <h4 className="m-1">Robo Game</h4>
             <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
