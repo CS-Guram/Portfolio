@@ -8,7 +8,7 @@ import javascript from '../components/images/javascript.png';
 import postgresql from '../components/images/postgresql.png'; 
 import linux from '../components/images/linux.png'; 
 
-import world from '../components/images/word-image-1.jpeg'; 
+// import world from '../components/images/word-image-1.jpeg'; 
 import Dental from '../components/images/TO Dental.jpg'; 
 import Robot from '../components/images/Robo.jpg'; 
 import PetStore from '../components/images/Pet Paradise.jpg'; 
@@ -21,6 +21,7 @@ function Home () {
 {/* home section */}
   {/* <h3 className="text-center mt-40">Hi There. I'm Guram.</h3>
   <h3 className="text-center m-4">I am a Full Stack Developer </h3><br/> */}
+  <section className="portfolio" id="home">
       <div className="home-container  mt-40">
         <div className="photo-column col-lg-6">
           <div className="row">
@@ -45,9 +46,11 @@ function Home () {
           </div>
         </div>
       </div>
+    </section>
 
 {/* about me section  */}
-    <br/><h3 className="text-center m-4"><strong>About Me</strong></h3><br/>
+<section className="portfolio" id="about me">
+    <br/><h3 id="about" className="text-center m-4"><strong>About Me</strong></h3><br/>
     <div className="container1">
       <div className="row">
         <div className="photo-column col-lg-3 col-sm-12">
@@ -70,24 +73,27 @@ function Home () {
         </div>
       </div>  
     </div> 
+</section>
 
 
 {/* Display your technical projects here */}
 {/* Example project 1 */}
-
-<section className="portfolio" id="portfolio">
+{/* id connects to link and selects/hovers */}
+<section className="portfolio" id="projects"> 
       <h2 className="text-center m-5"><strong>Technical Projects</strong></h2>
 
-      <div className="portfolio-container">
+  <div className="portfolio-container">
         {/* Add more portfolio boxes as needed */}
+        <div className="row justify-content-center">
+
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
           <img src={Dental} alt="To Dental Web" />
           <div className="portfolio-layer">
             <h4 className="m-2">T | O Dental</h4>
-            <p>The web app dental service made with React.JS, Bootstrap, node.js,
-              express.js, nodemailer, cors, axios, nodemon and MySQL workbench.
-              Patients can open an account to find the history of the procedures.
-              Find the proper insurance forms and service infromation.</p>
+            <p>Dental web app using React.JS, Bootstrap,
+               node.js, express.js, nodemailer, cors, axios, nodemon, and MySQL 
+               workbench.</p>
               <div className="btn-group" role="group" aria-label='Basic example'>
                 <button type="button" className="btn btn-secondary" 
                   onClick={() => window.open("https://github.com/CS-Guram/TO-Dental", "_blank")}>Repo</button>
@@ -95,11 +101,12 @@ function Home () {
                   onClick={() => window.open(ToDental, '_blank', 'noopener noreferrer')}>Video
                 </button>
               </div>
-        </div>
-        </div>
-
-
+            </div>
+            </div>
+            </div>
+      
         {/* Add more portfolio boxes as needed 2*/}
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
           <img src={PetStore} alt="" />
           <div className="portfolio-layer">
@@ -109,13 +116,14 @@ function Home () {
                and find information about pet healthcare.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary" >Repo</button>
-            <button type="button" className="btn btn-secondary" >Live</button>
             <button type="button" className="btn btn-secondary" >Video</button>
           </div>
         </div>
         </div>
+        </div>
 
         {/* Add more portfolio boxes as needed 3*/}
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
           <img src={Robot} alt="" />
           <div className="portfolio-layer">
@@ -130,55 +138,77 @@ function Home () {
           </div>
         </div>
         </div>
+        </div>
 
-        {/* Add more portfolio boxes as needed */}
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={world} alt="" />
+          <img src={Dental} alt="To Dental Web" />
           <div className="portfolio-layer">
-            <h4 className="m-2">AnimeFans</h4>
-            <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
+            <h4 className="m-2">T | O Dental</h4>
+            <p>The web app dental service is built using React.JS, Bootstrap,
+               node.js, express.js, nodemailer, cors, axios, nodemon, and MySQL 
+               workbench. Patients can open accounts to access their procedure history,
+               insurance forms, and service information..</p>
+              <div className="btn-group" role="group" aria-label='Basic example'>
+                <button type="button" className="btn btn-secondary" 
+                  onClick={() => window.open("https://github.com/CS-Guram/TO-Dental", "_blank")}>Repo</button>
+                <button type="button" className="btn btn-secondary" 
+                  onClick={() => window.open(ToDental, '_blank', 'noopener noreferrer')}>Video
+                </button>
+              </div>
+            </div>
+            </div>
+            </div>
+      
+        {/* Add more portfolio boxes as needed 2*/}
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
+        <div className="portfolio-box">
+          <img src={PetStore} alt="" />
+          <div className="portfolio-layer">
+            <h4 className="m-2">Pet Paradise</h4>
+            <p>The web app for a pet store is built using HTML, PHP, SQL, and the Apache
+               web server. Users can open an account, browse and purchase pet food items,
+               and find information about pet healthcare.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary" >Repo</button>
-            <button type="button" className="btn btn-secondary" >Live</button>
             <button type="button" className="btn btn-secondary" >Video</button>
-            {/* <a href="https://www.youtube.com/watch?v=CBYHwZcbD-s"><i className='bx bx-link-external'></i></a> */}
           </div>
         </div>
         </div>
+        </div>
 
-        {/* Add more portfolio boxes as needed */}
+        {/* Add more portfolio boxes as needed 3*/}
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={world} alt="" />
+          <img src={Robot} alt="" />
           <div className="portfolio-layer">
-            <h4 className="m-2">AnimeFans</h4>
+            <h4 className="m-1">Robo Game</h4>
             <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
-            <button type="button"  className="btn btn-secondary" >Repo</button>
-            <button type="button" className="btn btn-secondary" >Live</button>
-            <button type="button" className="btn btn-secondary" >Video</button>
-            {/* <a href="https://www.youtube.com/watch?v=CBYHwZcbD-s"><i className='bx bx-link-external'></i></a> */}
+            <button type="button"  className="btn btn-secondary" 
+                 onClick={() => window.open("https://github.com/CS-Guram/Robo-Game", '_blank', 'noopener noreferrer')}>Repo</button>
+            <button type="button" className="btn btn-secondary"   
+                onClick={() => window.open("https://gutara.itch.io/robo", '_blank', 'noopener noreferrer')}> Live 
+            </button>
           </div>
+        </div>
         </div>
         </div>
 
-        {/* Add more portfolio boxes as needed */}
-        <div className="portfolio-box">
-          <img src={world} alt="" />
-          <div className="portfolio-layer">
-            <h4 className="m-2">AnimeFans</h4>
-            <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
-          <div className="btn-group" role="group" aria-label='Basic example' >
-            <button type="button"  className="btn btn-secondary" >Repo</button>
-            <button type="button" className="btn btn-secondary" >Live</button>
-            <button type="button" className="btn btn-secondary" >Video</button>
-            {/* <a href="https://www.youtube.com/watch?v=CBYHwZcbD-s"><i className='bx bx-link-external'></i></a> */}
-          </div>
-        </div>
-        </div>
-      </div>
-      {/* Contact section */}
+
+
+
+   
+    </div>
+  </div>
+  </section>
+
+
+  
+  {/* Contact section */}
+  <section className="portfolio" id="contact">
       <h3 className="text-center m-4"><strong>GET IN TOUCH</strong></h3>
-    </section>
+  </section>
 
 
 </>

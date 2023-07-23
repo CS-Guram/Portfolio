@@ -4,7 +4,20 @@
         font-size: 17px;
     } 
 }
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media only screen and (max-width: 767px) {
+  .portfolio-container {
+    grid-template-columns: 1fr; /* Change to one column */
+    gap: 1rem; /* Reduce the gap between projects */
+    margin: 2rem; /* Adjust the margin for better spacing */
+  }
 
+  /* Specific styles for portfolio boxes on smaller screens */
+  .portfolio-box {
+    margin-bottom: 2rem; /* Add some space between each project */
+  }
+}
 .home-container{
   display:flex;
   justify-content: center;
@@ -34,13 +47,13 @@
     padding: 5px;
   }
 
-  .portfolio-container{
+  /* .portfolio-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
     margin: 4.5rem;
-  }
+  } */
 
   .portfolio-container .portfolio-box{
     position: relative;
@@ -79,28 +92,21 @@
   }
 
   .portfolio-layer h4{
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     font-style: oblique;
+    text-align: center;
   }
 
   .portfolio-layer p {
-    font-size: 1.2rem;
-    margin-bottom: 10%;
+    font-size: 1.0rem;
+    margin-bottom: 2%;
     color: rgb(255, 255, 255);
+    text-align: left;
+    justify-content: center;
   }
-/* 
-.portfolio-layer a{
-  display: inlne-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: red;
-  border-radius: 50%;
-} */
 
 .portfolio-layer button{
   font-size: 2rem;

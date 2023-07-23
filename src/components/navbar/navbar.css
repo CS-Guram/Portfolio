@@ -10,25 +10,31 @@
   box-shadow: 0 0 10px rgba(245, 240, 240, 0.8);
 }
 
-
 .navbar {
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
 
-
 .navbar .nav-link {
   color: white;
   font-size: 18px;
+  cursor: pointer;
+  text-align: center;
 }
 
+/* Change the color on hover */
 .navbar .nav-link:hover {
-  color: orange;
+  color: rgb(0, 0, 0);
+  border-radius: 22%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30%;
 }
 
-.navbar .nav-link.active,
-.navbar .nav-link:focus {
-  color: orange;
+/* Change the color for the active link */
+.navbar .nav-link.active {
+  color: rgb(109, 171, 253) !important; 
 }
+
+/* ////////////////////////////// */
 
 .navbar .nav-link.social-link {
   display: inline-block;
@@ -41,16 +47,12 @@
 
 /*navbar toggle button and navbar collapse content */
 .navbar-toggler-icon {
-  background-color: orange /* Change this to the color you want */
-}
-
- button {
-  border-radius: 10%;
-  background-color: rgb(33, 104, 211);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  height: 40px; /* Set the height of the icon */
+  width: 40px; /* Set the width of the icon */
 }
 
 button:hover {
   border-radius: 20%;
-  color: black;
 }
