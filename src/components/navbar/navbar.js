@@ -39,9 +39,9 @@ function Header() {
             </Link>
 
             {/* Resume */}
-            <button className="btn btn-primary p-1" onClick={() => window.open('/docs/Resume.docx')} download>
-               Resume
-            </button>
+            <a className="btn btn-primary p-1" href="/docs/Resume.docx" download="Resume.docx">
+              Resume
+            </a>
         </div>
 
 
