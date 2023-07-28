@@ -12,6 +12,7 @@ import world from '../components/images/word-image-1.jpeg';
 import Dental from '../components/images/TO Dental.jpg'; 
 import Robot from '../components/images/Robo.jpg'; 
 import PetStore from '../components/images/Pet Paradise.jpg'; 
+import WhackGame from '../components/images/Whack.jpg'; 
 // Video link
 import ToDental from '../components/video/video.mp4'; //Import the video file
 
@@ -61,7 +62,7 @@ function Home () {
           <h4 className="text-center m-5">Dynamic Full-Stack Developer Fueled by Creativity and Problem-Solving</h4>
          <p className="mt-2">I am a recent computer science graduate with a passion for full-stack development. 
          Throughout my academic journey, I have acquired a solid foundation in various programming languages, 
-         including React.js, Python, C++, and JavaScript. I enjoy tackling complex problems and finding innovative 
+         including JavaScript, Python, C++, and Java. I enjoy tackling complex problems and finding innovative 
          solutions that enhance user experiences. With a strong understanding of software development principles 
          and a keen eye for detail, I strive to deliver high-quality projects that meet both functional and aesthetic 
          requirements. As a versatile developer, I am constantly seeking opportunities to expand my skill set and stay 
@@ -128,7 +129,9 @@ function Home () {
           <img src={Robot} alt="" />
           <div className="portfolio-layer">
             <h4 className="m-2">Robo Game</h4>
-            <p>2D Robo shooter created with the Unity engine, and it includes various features like a physics engine, collision detection, and animation.</p>
+            <p>Robo Shooter is a 2D game created with the Unity engine, where players control a Robo defending Earth from invading balloons. 
+               Target and destroy balloons as they fly through the sky. Score up to 30 points, 
+               with sound options and power-ups for added excitement. Defend the planet, set high scores, and enjoy the challenge!</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary" 
                  onClick={() => window.open("https://github.com/CS-Guram/Robo-Game", '_blank', 'noopener noreferrer')}>Repo</button>
@@ -143,13 +146,13 @@ function Home () {
         {/* Add more portfolio boxes as needed 4*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={world} alt="To Dental Web" />
+          <img src={WhackGame} alt="To Dental Web" />
           <div className="portfolio-layer">
-            <h4 className="m-2">T | O Dental</h4>
-            <p>The web app dental service is built using React.JS, Bootstrap,
-               node.js, express.js, nodemailer, cors, axios, nodemon, and MySQL 
-               workbench. Patients can open accounts to access their procedure history,
-               insurance forms, and service information..</p>
+            <h4 className="m-2">Whack-a-Professor</h4>
+            <p>Whack-a-Professor is a fast-paced browser game that challenges players 
+              to test their reaction time and accuracy. The objective is to click on professors that
+               pop up randomly from holes within a 10-second time limit. Each successful click on a 
+               professor earns the player one point.</p>
               <div className="btn-group" role="group" aria-label='Basic example'>
                 <button type="button" className="btn btn-secondary" 
                   onClick={() => window.open("https://github.com/CS-Guram/TO-Dental", "_blank")}>Repo</button>

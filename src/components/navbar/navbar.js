@@ -39,9 +39,9 @@ function Header() {
             </Link>
 
             {/* Resume */}
-            <a className="btn btn-primary p-1" href="/docs/Resume.docx" download="Resume.docx">
-              Resume
-            </a>
+            <Link className="btn btn-primary p-1" to="#" onClick={() => window.open('https://drive.google.com/file/d/1ebju6DyrqCb_oy9yYM9Ne1cV7LjOzLwK/view?usp=drive_link/', '_blank')}>
+            Resume
+            </Link>
 
         </div>
 
