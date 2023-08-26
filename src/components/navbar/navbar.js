@@ -21,12 +21,11 @@ function Header() {
   <Navbar bg="light" expand="lg" className="fixed-top">
     <Container>
       <Navbar.Brand className="navbar-brand">
-            <Link className="nav-link" to="home">
-              <span className="text-warning p-2">Guram Kutaladze</span>
+            <Link className="home nav-link" to="home">
+              <span className="text-light p-2">Guram Kutaladze</span>
             </Link>   
       </Navbar.Brand>  
        
-
         <div className=" md:flex items-center gap-6 ml-6 flex-2 d-flex ">
             {/* GitHub */}
             <Link className="github nav-link" to="#" onClick={() => window.open('https://github.com/CS-Guram', '_blank')}>
@@ -39,19 +38,17 @@ function Header() {
             </Link>
 
             {/* Resume */}
-            <Link className="btn btn-primary p-1" to="#" onClick={() => window.open('https://drive.google.com/file/d/1ebju6DyrqCb_oy9yYM9Ne1cV7LjOzLwK/view?usp=drive_link/', '_blank')}>
+            <Link className="btn btn-primary p-1" to="#" onClick={() => window.open('https://drive.google.com/file/d/1nxo6UT5_5FvX5qqqbrBycxELFRVZw0um/view?usp=sharing', '_blank')}>
             Resume
             </Link>
 
         </div>
 
-
-
+        {/* ************************************************************ */}
         {/* Drops the menu to the vertical position on the mobile screen*/}
-        <Navbar.Toggle aria-controls="basic-navbar-nav " style={{ backgroundColor: 'rgb(55, 97, 212)' }} />
+        <Navbar.Toggle className="custom-hamburger-icon" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav justify-content-center">
 
-    
     <Nav className="nav ms-auto">
         {/* Home */}
           {/* <Link
@@ -97,13 +94,16 @@ function Header() {
         {/* Contact */}
 
         <Modal show={showModal} onHide={handleCloseModal}>
+          
         <Modal.Header closeButton>
           <Modal.Title>Contact Me</Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
           <p>Email: grm.kutaladze@gmail.com</p>
           <p>Phone: +1 347-577-3338</p>
         </Modal.Body>
+
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
             Close

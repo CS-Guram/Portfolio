@@ -14,10 +14,9 @@ function Footer() {
     };
     return (
 
-    <footer className="page-footer font-small blue">
+    <footer className="page-footer">
     <div className="container-fluid text-center text-md-left">
         <div className="row">
-            <hr className="clearfix w-100 d-md-none pb-0"/>
             <div className="col-lg">
                     <i className="fas fa-cog fa-spin"></i><br/><br/>
                     {/* <i className="bi bi-envelope"></i><br/><br/> */}
@@ -25,7 +24,7 @@ function Footer() {
                     <i> Please feel free to contact me</i><br></br>
                     <i> if you have any question! </i>
                 </div>
-                <button variant="primary" onClick={handleShowModal}>Contact Me</button>
+                <button className="unique-button" onClick={handleShowModal}>Contact Me</button>
              
      
             </div>

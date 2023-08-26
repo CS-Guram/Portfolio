@@ -23,11 +23,40 @@
 
 /* Change the color on hover */
 .navbar .nav-link:hover {
-  color: rgb(0, 0, 0);
-  border-radius: 22%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30%;
+  color: rgb(81, 164, 233);
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 0%;
 }
+
+
+
+/*************************** GitHub ***************************/
+/* Styles for the GitHubicon */
+.github.nav-link i.bi-github {
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #ffffff; /* LinkedIn brand color */
+  /* Add any other styles specific to the LinkedIn icon */
+  transition: box-shadow 0.2s, color 0.2s; /* Add transitions for smooth effects */
+}
+/* Hover styles for the LinkedIn icon */
+.github.nav-link:hover i.bi-github {
+  color: rgb(81, 164, 233);/* Change the color when the icon is hovered over */
+}
+
+/*************************** Linkedin ***************************/
+/* Styles for the LinkedIn icon */
+.linkedin.nav-link i.bi-linkedin {
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #ffffff; /* LinkedIn brand color */
+  /* Add any other styles specific to the LinkedIn icon */
+  transition: box-shadow 0.2s, color 0.2s; /* Add transitions for smooth effects */
+}
+
+/* Hover styles for the LinkedIn icon */
+.linkedin.nav-link:hover i.bi-linkedin {
+  color: rgb(81, 164, 233);/* Change the color when the icon is hovered over */
+}
+
 
 /* Change the color for the active link */
 .navbar .nav-link.active {
@@ -53,6 +82,25 @@
   width: 40px; /* Set the width of the icon */
 }
 
+/* hamburger button  */
+button{
+  box-shadow: 0 0 5px rgb(223, 240, 229);
+  font-size: 2rem;
+  display: inline-block;
+  padding: 2px;
+  align-items: center;
+}
+
 button:hover {
-  border-radius: 20%;
+  /* border-color: rgb(112, 175, 247); */
+  box-shadow: 0 0 5px rgb(223, 240, 229);
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+  border-radius: 20px;
+}
+
+button:focus {
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  border-radius: 20px;
 }

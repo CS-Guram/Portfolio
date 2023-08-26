@@ -13,6 +13,7 @@ import Dental from '../components/images/TO Dental.jpg';
 import Robot from '../components/images/Robo.jpg'; 
 import PetStore from '../components/images/Pet Paradise.jpg'; 
 import WhackGame from '../components/images/Whack.jpg'; 
+import Toy from '../components/images/toy.png'; 
 // Video link
 import ToDental from '../components/video/video.mp4'; //Import the video file
 
@@ -82,6 +83,7 @@ function Home () {
 {/* id connects to link and selects/hovers */}
 <section className="portfolio" id="projects"> 
       <h2 className="text-center m-5"><strong>Technical Projects</strong></h2>
+      <h3 className="text-center m-5"><strong>Responsive Web Application</strong></h3>
 
   <div className="portfolio-container">
         {/* Add more portfolio boxes as needed */}
@@ -92,9 +94,9 @@ function Home () {
           <img src={Dental} alt="To Dental Web" />
           <div className="portfolio-layer">
             <h4 className="m-2">T | O Dental</h4>
-            <p>Dental web app using React.JS, Bootstrap,
-               node.js, express.js, nodemailer, cors, axios, nodemon, and MySQL 
-               workbench.</p>
+            <p>The dental web app utilizes React.js and Bootstrap for its frontend, featuring 5 informative pages about
+               the dental clinic and procedures, along with patient sign-up and login. The backend, built on Node.js and
+               Express.js, handles data retrieval, including user logins and past dental procedures.</p>
               <div className="btn-group" role="group" aria-label='Basic example'>
                 <button type="button" className="btn btn-secondary" 
                   onClick={() => window.open("https://github.com/CS-Guram/TO-Dental", "_blank")}>Repo</button>
@@ -116,12 +118,15 @@ function Home () {
                web server. Users can open an account, browse and purchase pet food items,
                and find information about pet healthcare.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
-            <button type="button"  className="btn btn-secondary" >Repo</button>
+            <button type="button" className="btn btn-secondary" 
+                  onClick={() => window.open("https://github.com/CS-Guram/eCommerce-Web-App", "_blank")}>Repo</button>
             <button type="button" className="btn btn-secondary" >Video</button>
           </div>
         </div>
         </div>
         </div>
+
+        <h3 className="text-center m-5"><strong>Games</strong></h3>
 
         {/* Add more portfolio boxes as needed 3*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
@@ -131,7 +136,7 @@ function Home () {
             <h4 className="m-2">Robo Game</h4>
             <p>Robo Shooter is a 2D game created with the Unity engine, where players control a Robo defending Earth from invading balloons. 
                Target and destroy balloons as they fly through the sky. Score up to 30 points, 
-               with sound options and power-ups for added excitement. Defend the planet, set high scores, and enjoy the challenge!</p>
+               with sound options. Defend the planet, and enjoy the challenge!</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary" 
                  onClick={() => window.open("https://github.com/CS-Guram/Robo-Game", '_blank', 'noopener noreferrer')}>Repo</button>
@@ -146,7 +151,7 @@ function Home () {
         {/* Add more portfolio boxes as needed 4*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={WhackGame} alt="To Dental Web" />
+          <img src={WhackGame} alt="" />
           <div className="portfolio-layer">
             <h4 className="m-2">Whack-a-Professor</h4>
             <p>Whack-a-Professor is a fast-paced browser game that challenges players 
@@ -155,26 +160,28 @@ function Home () {
                professor earns the player one point.</p>
               <div className="btn-group" role="group" aria-label='Basic example'>
                 <button type="button" className="btn btn-secondary" 
-                  onClick={() => window.open("https://github.com/CS-Guram/TO-Dental", "_blank")}>Repo</button>
+                  onClick={() => window.open("https://github.com/CS-Guram/Whack-a-Professor", "_blank")}>Repo</button>
                 <button type="button" className="btn btn-secondary" 
-                  onClick={() => window.open(ToDental, '_blank', 'noopener noreferrer')}>Video
+                  onClick={() => window.open("https://cs-guram.github.io/Whack-a-Professor/", '_blank', 'noopener noreferrer')}>Live
                 </button>
               </div>
             </div>
             </div>
             </div>
-      
+
+
+            <h3 className="text-center m-5"><strong>Python Projects</strong></h3>
+
         {/* Add more portfolio boxes as needed 5*/}
         <div className="col-lg-4 col-sm-8 my-3 mx-4">
         <div className="portfolio-box">
-          <img src={world} alt="" />
+          <img src={Toy} alt="" />
           <div className="portfolio-layer">
-            <h4 className="m-2">Pet Paradise</h4>
-            <p>The web app for a pet store is built using HTML, PHP, SQL, and the Apache
-               web server. Users can open an account, browse and purchase pet food items,
-               and find information about pet healthcare.</p>
+            <h4 className="m-2">Toy Language Interpreter</h4>
+            <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
-            <button type="button"  className="btn btn-secondary" >Repo</button>
+            <button type="button"  className="btn btn-secondary"
+             onClick={() => window.open("https://github.com/CS-Guram/Toy-Language-Project/tree/main#running-the-interpreter", "_blank")}>Repo</button>
             <button type="button" className="btn btn-secondary" >Video</button>
           </div>
         </div>
@@ -186,7 +193,7 @@ function Home () {
         <div className="portfolio-box">
           <img src={world} alt="" />
           <div className="portfolio-layer">
-            <h4 className="m-1">Robo Game</h4>
+            <h4 className="m-1">Upcoming Projects</h4>
             <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary" 
@@ -198,9 +205,6 @@ function Home () {
         </div>
         </div>
         </div>
-
-
-
 
    
     </div>
