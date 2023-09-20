@@ -134,7 +134,7 @@ function Home () {
         <div className="portfolio-box">
           <img src={Robot} alt="" />
           <div className="portfolio-layer">
-            <h4 className="m-2">Robo Game</h4>
+            <h4 className="m-2">Unity 2D Robo Game</h4>
             <p>Robo Shooter is a 2D game created with the Unity engine, where players control a Robo defending Earth from invading balloons. 
                Target and destroy balloons as they fly through the sky. Score up to 30 points, 
                with sound options. Defend the planet, and enjoy the challenge!</p>

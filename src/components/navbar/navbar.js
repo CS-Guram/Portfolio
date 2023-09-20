@@ -38,9 +38,9 @@ function Header() {
             </Link>
 
             {/* Resume */}
-            <Link className="btn btn-primary p-1" to="#" onClick={() => window.open('https://drive.google.com/file/d/1nxo6UT5_5FvX5qqqbrBycxELFRVZw0um/view?usp=sharing', '_blank')}>
+            {/* <Link className="btn btn-primary p-1" to="#" onClick={() => window.open('https://drive.google.com/file/d/1nxo6UT5_5FvX5qqqbrBycxELFRVZw0um/view?usp=sharing', '_blank')}>
             Resume
-            </Link>
+            </Link> */}
 
         </div>
 
