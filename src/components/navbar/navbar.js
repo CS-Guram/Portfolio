@@ -22,7 +22,7 @@ function Header() {
     <Container>
       <Navbar.Brand className="navbar-brand">
             <Link className="home nav-link" to="home">
-              <span className="text-light p-2">Guram Kutaladze</span>
+              <span className="text-warning p-2">Guram Kutaladze</span>
             </Link>   
       </Navbar.Brand>  
        

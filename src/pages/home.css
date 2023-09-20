@@ -42,18 +42,25 @@
   }
 
   /* Portfolio Section */
+/* Custom class for photo styling */
+.my-photo-container {
+  margin: 1%; /* Add margin to the container */
+  text-align: center; /* Center the image horizontally */
+}
+
+/* Styling for the image itself */
+.my-photo-container img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
   .portfolio{
     background: #f0f0f0;
     padding: 5px;
   }
 
-  /* .portfolio-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-    margin: 4.5rem;
-  } */
 
   .portfolio-container .portfolio-box{
     position: relative;
