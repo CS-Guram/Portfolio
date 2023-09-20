@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.292dc6aa.css",
+    "main.js": "/Portfolio/static/js/main.c619bc09.js",
+    "static/media/video.mp4": "/Portfolio/static/media/video.acbf9219b0082cc399a6.mp4",
+    "static/media/Robo.jpg": "/Portfolio/static/media/Robo.c00bf38b68dc655b7c4b.jpg",
+    "static/media/toy.png": "/Portfolio/static/media/toy.e7d33b586c925540e9d9.png",
+    "static/media/TO Dental.jpg": "/Portfolio/static/media/TO Dental.ac7480ee59d237b2e2a2.jpg",
+    "static/media/Profile2.jpg": "/Portfolio/static/media/Profile2.1756bc7b1b6d7dcbb127.jpg",
+    "static/media/Whack.jpg": "/Portfolio/static/media/Whack.27eeef5e0c9872653506.jpg",
+    "static/media/multimedia.jpg": "/Portfolio/static/media/multimedia.dd6cc1081fb7f7296c9f.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.292dc6aa.css.map": "/Portfolio/static/css/main.292dc6aa.css.map",
+    "main.c619bc09.js.map": "/Portfolio/static/js/main.c619bc09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.292dc6aa.css",
+    "static/js/main.c619bc09.js"
+  ]
+}
