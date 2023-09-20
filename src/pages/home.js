@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import profile from '../components/images/pic2.jpg'; //Import the image file
+import profile from '../components/images/profile.jpg'; //Import the image file
 import react from '../components/images/react.png'; 
 import python from '../components/images/python.png'; 
 import C from '../components/images/c++.png'; 
@@ -56,8 +56,8 @@ function Home () {
     <br/><h3 id="about" className="text-center m-4"><strong>About Me</strong></h3><br/>
     <div className="container1">
       <div className="row">
-        <div className="myPhoto1 col-lg-4 col-sm-12  my-photo-container">
-           <img src={profile} alt="profile"/>
+        <div className="photo-column col-lg-3 col-sm-12">
+           <img src={profile} alt="profile" className="img-fluid rounded"/>
         </div>
 
         <div className="paragraph-column col-lg-6">
