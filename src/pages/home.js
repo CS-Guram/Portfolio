@@ -14,6 +14,7 @@ import Robot from '../components/images/Robo.jpg';
 import PetStore from '../components/images/Pet Paradise.jpg'; 
 import WhackGame from '../components/images/Whack.jpg'; 
 import Toy from '../components/images/toy.png'; 
+import Multimedia from '../components/images/multimedia.jpg'
 // Video link
 import ToDental from '../components/video/video.mp4'; //Import the video file
 
@@ -120,7 +121,7 @@ function Home () {
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button" className="btn btn-secondary" 
                   onClick={() => window.open("https://github.com/CS-Guram/eCommerce-Web-App", "_blank")}>Repo</button>
-            <button type="button" className="btn btn-secondary" >Video</button>
+            {/* <button type="button" className="btn btn-secondary" >Video</button> */}
           </div>
         </div>
         </div>
@@ -178,11 +179,12 @@ function Home () {
           <img src={Toy} alt="" />
           <div className="portfolio-layer">
             <h4 className="m-2">Toy Language Interpreter</h4>
-            <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
+            <p>This project is an interpreter for a toy programming language that can perform various tasks including syntax error detection,
+               uninitialized variable reporting, assignment execution, and variable value printing.</p>
            <div className="btn-group" role="group" aria-label='Basic example' >
             <button type="button"  className="btn btn-secondary"
              onClick={() => window.open("https://github.com/CS-Guram/Toy-Language-Project/tree/main#running-the-interpreter", "_blank")}>Repo</button>
-            <button type="button" className="btn btn-secondary" >Video</button>
+            {/* <button type="button" className="btn btn-secondary" >Video</button> */}
           </div>
         </div>
         </div>
@@ -193,13 +195,35 @@ function Home () {
         <div className="portfolio-box">
           <img src={world} alt="" />
           <div className="portfolio-layer">
-            <h4 className="m-1">Upcoming Projects</h4>
-            <p>An anime streaming service made with React.JS User can search and watch the anme without ad.</p>
+            <h4 className="m-5">Upcoming Projects</h4>
+            {/* <p>........................ter </p> */}
            <div className="btn-group" role="group" aria-label='Basic example' >
-            <button type="button"  className="btn btn-secondary" 
+            {/* <button type="button"  className="btn btn-secondary" 
                  onClick={() => window.open("https://github.com/CS-Guram/Robo-Game", '_blank', 'noopener noreferrer')}>Repo</button>
             <button type="button" className="btn btn-secondary"   
                 onClick={() => window.open("https://gutara.itch.io/robo", '_blank', 'noopener noreferrer')}> Live 
+            </button> */}
+          </div>
+        </div>
+        </div>
+        </div>
+
+            <h3 className="text-center m-5"><strong>Multimedia</strong></h3>
+
+        {/* Add more portfolio boxes as needed 7*/}
+        <div className="col-lg-4 col-sm-8 my-3 mx-4">
+        <div className="portfolio-box">
+          <img src={Multimedia} alt="" />
+          <div className="portfolio-layer">
+            <h4 className="m-1">Multimedia Labs</h4>
+            <p>In college, I delved into web development, creating dynamic bars, an interactive Sound machine app, 
+              captivating animations, and a practical weight converter. Using HTML, CSS, and Javascript, I blended 
+              creativity with functionality, igniting my passion for pushing the web's possibilities.</p>
+           <div className="btn-group" role="group" aria-label='Basic example' >
+            <button type="button"  className="btn btn-secondary" 
+                 onClick={() => window.open("https://github.com/CS-Guram/MyPortfolio", '_blank', 'noopener noreferrer')}>Repo</button>
+            <button type="button" className="btn btn-secondary"   
+                onClick={() => window.open("https://cs-guram.github.io/MyPortfolio/", '_blank', 'noopener noreferrer')}> Live 
             </button>
           </div>
         </div>
